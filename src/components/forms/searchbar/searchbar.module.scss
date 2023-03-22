@@ -1,0 +1,28 @@
+.search {
+  @apply flex items-center justify-center text-lg;
+  flex: 0 0 40%;
+}
+
+.input {
+  font-family: inherit;
+  font-size: inherit;
+  width: 90%;
+  transition: all 0.2s;
+  @apply bg-gray-100 border-none text-inherit py-3 px-4 rounded-full outline-none focus:w-full focus:bg-gray-200 -mr-12;
+
+  &::-webkit-input-placeholder {
+    @apply font-thin text-gray-600;
+  }
+}
+
+.icon {
+  @apply h-8 w-8;
+}
+
+.button {
+  @apply border-none bg-transparent;
+
+  &:active {
+    transform: translateY(0.2rem);
+  }
+}

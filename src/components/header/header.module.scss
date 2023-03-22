@@ -1,0 +1,35 @@
+.header {
+  @apply h-20 bg-white border-b shadow flex justify-between items-center px-4;
+}
+
+.logo {
+  @apply h-14;
+}
+
+.navigation {
+  @apply flex items-center self-stretch;
+
+  & > * {
+    @apply px-4 cursor-pointer h-full flex items-center;
+  }
+
+  & > *:hover {
+    @apply bg-gray-100;
+  }
+}
+
+.box {
+  @apply relative;
+}
+
+.notification {
+  @apply text-sm h-6 w-6 rounded-full bg-blue-700 text-white absolute top-4 right-1 border-2 border-white flex items-center justify-center;
+}
+
+.icon {
+  @apply h-8 w-8;
+}
+
+.name {
+  @apply ml-2 text-base;
+}
