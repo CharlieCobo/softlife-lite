@@ -17,7 +17,7 @@ export default component$<SearchbarProps>(() => {
   return (
     <Form action={action} class={styles.search}>
       <input type="text" name="username" class={styles.input} placeholder="Search & Enter" />
-      <button type="submit" class={styles.button}>
+      <button aria-label="Search input" type="submit" class={styles.button}>
         <Icon icon="search" classes={styles.icon} />
       </button>
     </Form>

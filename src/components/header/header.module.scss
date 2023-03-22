@@ -23,7 +23,7 @@
 }
 
 .notification {
-  @apply text-sm h-6 w-6 rounded-full bg-blue-700 text-white absolute top-4 right-1 border-2 border-white flex items-center justify-center;
+  @apply text-sm h-6 w-6 rounded-full bg-gradient-to-tr from-blue-500 to-teal-300 text-white absolute top-4 right-1 border-2 border-white flex items-center justify-center;
 }
 
 .icon {

@@ -1,4 +1,42 @@
 .sidebar {
-  @apply bg-gray-900 text-white;
+  @apply bg-gray-900 text-white flex flex-col justify-between;
   flex: 0 0 18%;
+}
+
+.navigation {
+  @apply text-xl list-none mt-14;
+}
+
+.item {
+  @apply relative;
+
+  &:not(:last-child) {
+    @apply mb-2;
+  }
+
+  &::before {
+    content: '';
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+    @apply absolute top-0 left-0 h-full w-1 bg-gradient-to-tr from-blue-500 to-teal-300;
+  }
+}
+
+.item:hover::before,
+.active::before {
+  transform: scaleY(1);
+  @apply w-full;
+}
+
+.link:link,
+.link:visited {
+  @apply text-gray-300 no-underline uppercase flex py-6 px-6 gap-4 items-center relative;
+}
+
+.icon {
+  @apply w-7 h-7;
+}
+
+.legal {
+  @apply text-sm text-gray-400 text-center p-9;
 }

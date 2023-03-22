@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 
 interface IconProps {
-  icon: 'shield' | 'search' | 'bell' | 'message-square' | 'user';
+  icon: 'shield' | 'search' | 'bell' | 'message-square' | 'user' | 'users' | 'home' | 'coffee';
   classes: string;
 }
 
